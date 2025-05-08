@@ -1,8 +1,12 @@
-# vite-plugin-vue-layouts
-
-[![npm version](https://img.shields.io/npm/v/vite-plugin-vue-layouts)](https://www.npmjs.com/package/vite-plugin-vue-layouts)
+# vite-plugin-vue-layouts-baron
 
 > Router based layout for Vue 3 applications using [Vite](https://github.com/vitejs/vite)
+
+## Forked from https://github.com/johncampionjr/vite-plugin-vue-layouts
+
+- Updated all dependencies
+- Resolved linting errors
+- Enabled Vite6 peer dependency
 
 ## Overview
 
@@ -29,7 +33,7 @@ meta:
 Install Layouts:
 
 ```bash
-$ npm install -D vite-plugin-vue-layouts
+$ npm install -D vite-plugin-vue-layouts-baron
 ```
 
 Add to your `vite.config.js`:
@@ -37,7 +41,7 @@ Add to your `vite.config.js`:
 ```js
 import Vue from '@vitejs/plugin-vue';
 import Pages from 'vite-plugin-pages';
-import Layouts from 'vite-plugin-vue-layouts';
+import Layouts from 'vite-plugin-vue-layouts-baron';
 
 export default {
   plugins: [Vue(), Pages(), Layouts()],
@@ -72,11 +76,11 @@ const router = createRouter({
 ```
 
 ## Client Types
-If you want type definition of `virtual:generated-layouts`, add `vite-plugin-vue-layouts/client` to `compilerOptions.types` of your `tsconfig`:
+If you want type definition of `virtual:generated-layouts`, add `vite-plugin-vue-layouts-baron/client` to `compilerOptions.types` of your `tsconfig`:
 ```json
 {
   "compilerOptions": {
-    "types": ["vite-plugin-vue-layouts/client"]
+    "types": ["vite-plugin-vue-layouts-baron/client"]
   }
 }
 ```
@@ -98,7 +102,7 @@ To use custom configuration, pass your options to Layouts when instantiating the
 
 ```js
 // vite.config.js
-import Layouts from 'vite-plugin-vue-layouts';
+import Layouts from 'vite-plugin-vue-layouts-baron';
 
 export default {
   plugins: [
@@ -256,7 +260,7 @@ The clientSideLayout uses a simpler [virtual file](https://vitejs.dev/guide/api-
 
 ```js
 // vite.config.js
-import { ClientSideLayout } from 'vite-plugin-vue-layouts'
+import { ClientSideLayout } from 'vite-plugin-vue-layouts-baron'
 
 export default {
   plugins: [

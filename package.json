@@ -1,7 +1,6 @@
 {
   "name": "vite-plugin-vue-layouts-baron",
-  "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Router based layout plugin for Vite and Vue. Forked from https://github.com/johncampionjr/vite-plugin-vue-layouts",
   "author": "Ian Baron",
   "license": "MIT",

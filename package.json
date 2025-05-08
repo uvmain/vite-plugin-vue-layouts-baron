@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-vue-layouts-baron",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Router based layout plugin for Vite and Vue. Forked from https://github.com/johncampionjr/vite-plugin-vue-layouts",
   "author": "Ian Baron",
   "license": "MIT",
@@ -12,14 +12,16 @@
   },
   "bugs": "https://github.com/uvmain/vite-plugin-vue-layouts-baron",
   "exports": {
-    "./client": {
-      "types": "./client.d.ts"
-    },
-    "./*": "./*",
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    },
+    "./client": {
+      "types": "./client.d.ts",
+      "import": "./client.mjs",
+      "require": "./client.js"
     }
   },
   "main": "dist/index.js",
